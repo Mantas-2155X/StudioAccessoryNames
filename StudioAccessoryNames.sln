@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KK_StudioAccessoryNames", "KK_StudioAccessoryNames\KK_StudioAccessoryNames.csproj", "{9B2ED11A-6FE1-4D4A-84AD-5B205FD50599}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HS2_StudioAccessoryNames", "HS2_StudioAccessoryNames\HS2_StudioAccessoryNames.csproj", "{9679A21D-1F2C-40CF-947A-28D12F02D2D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI_StudioAccessoryNames", "AI_StudioAccessoryNames\AI_StudioAccessoryNames.csproj", "{92072B35-8BBB-4FAC-95C9-35AD4CEAA06B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B2ED11A-6FE1-4D4A-84AD-5B205FD50599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B2ED11A-6FE1-4D4A-84AD-5B205FD50599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B2ED11A-6FE1-4D4A-84AD-5B205FD50599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B2ED11A-6FE1-4D4A-84AD-5B205FD50599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9679A21D-1F2C-40CF-947A-28D12F02D2D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9679A21D-1F2C-40CF-947A-28D12F02D2D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9679A21D-1F2C-40CF-947A-28D12F02D2D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9679A21D-1F2C-40CF-947A-28D12F02D2D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92072B35-8BBB-4FAC-95C9-35AD4CEAA06B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92072B35-8BBB-4FAC-95C9-35AD4CEAA06B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92072B35-8BBB-4FAC-95C9-35AD4CEAA06B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92072B35-8BBB-4FAC-95C9-35AD4CEAA06B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
