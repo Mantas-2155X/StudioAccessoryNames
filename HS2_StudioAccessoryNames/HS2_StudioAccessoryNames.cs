@@ -14,6 +14,7 @@ using UnityEngine.UI;
 namespace HS2_StudioAccessoryNames
 {
     [BepInPlugin(nameof(HS2_StudioAccessoryNames), nameof(HS2_StudioAccessoryNames), VERSION)]
+    [BepInProcess("StudioNEOV2")]
     public class HS2_StudioAccessoryNames : BaseUnityPlugin
     {
         public const string VERSION = "1.0.0";

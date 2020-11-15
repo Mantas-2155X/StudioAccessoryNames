@@ -13,6 +13,7 @@ using UnityEngine.UI;
 namespace KK_StudioAccessoryNames
 {
     [BepInPlugin(nameof(KK_StudioAccessoryNames), nameof(KK_StudioAccessoryNames), VERSION)]
+    [BepInProcess("CharaStudio")]
     public class KK_StudioAccessoryNames : BaseUnityPlugin
     {
         public const string VERSION = "1.0.0";
