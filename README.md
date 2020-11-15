@@ -5,7 +5,8 @@ This plugin gives accessory slots names in the Studio.
 # DO NOT REUPLOAD WITHOUT PERMISSION | 未经许可请勿转载
 
 **Features:**  
-* Renames non empty accessory slots (For example: `Slot 01` becomes `01 accessoryname`)
+* Renamed non empty accessory slots (For example: `Slot 01` becomes `01 accessoryname`)
+* Moved ON/OFF buttons to the side and extended the name field
 * Compatibility with MoreAccessories
 
 **Download:**  
