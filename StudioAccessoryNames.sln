@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HS2_StudioAccessoryNames", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI_StudioAccessoryNames", "AI_StudioAccessoryNames\AI_StudioAccessoryNames.csproj", "{92072B35-8BBB-4FAC-95C9-35AD4CEAA06B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PH_StudioAccessoryNames", "PH_StudioAccessoryNames\PH_StudioAccessoryNames.csproj", "{74D2DF72-B325-4DA2-883F-CCAB8EA065E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{92072B35-8BBB-4FAC-95C9-35AD4CEAA06B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92072B35-8BBB-4FAC-95C9-35AD4CEAA06B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92072B35-8BBB-4FAC-95C9-35AD4CEAA06B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74D2DF72-B325-4DA2-883F-CCAB8EA065E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D2DF72-B325-4DA2-883F-CCAB8EA065E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D2DF72-B325-4DA2-883F-CCAB8EA065E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74D2DF72-B325-4DA2-883F-CCAB8EA065E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
