@@ -1,5 +1,5 @@
 ﻿using System.Collections;
-
+using System.Linq;
 using BepInEx;
 using HarmonyLib;
 
@@ -34,8 +34,8 @@ namespace HS2_StudioAccessoryNames
             yield return null;
 
             var slots = GameObject.Find("StudioScene/Canvas Main Menu/02_Manipulate/00_Chara/01_State/Viewport/Content/Slot");
-            var moreAccs = slots.transform.childCount > 20;
-            
+
+            var index = 0;
             for (var i = 0; i < slots.transform.childCount; i++)
             {
                 var child = slots.transform.GetChild(i);
@@ -63,18 +63,20 @@ namespace HS2_StudioAccessoryNames
                 var textRect = text.GetComponent<RectTransform>();
                 textRect.offsetMax = new Vector2(150, textRect.offsetMax.y);
                 
-                if (moreAccs && i == slots.transform.childCount - 1)
+                if (!text.text.Any(char.IsDigit))
                     continue;
 
                 if (!child.gameObject.activeSelf)
                 {
-                    text.text = $"スロット{i + 1:D2}";
+                    text.text = $"スロット{index + 1:D2}";
                 }
                 else
                 {
-                    var acc = _char.charInfo.GetAccessory(i);
-                    text.text = acc == null ? $"スロット{i+1:D2}" : $"{i+1:D2} {acc.GetComponent<AIChara.ListInfoComponent>().data.Name}";
+                    var acc = _char.charInfo.GetAccessory(index);
+                    text.text = acc == null ? $"スロット{index + 1:D2}" : $"{index + 1:D2} {acc.GetComponent<AIChara.ListInfoComponent>().data.Name}";
                 }
+
+                index++;
             }
         }
     }
