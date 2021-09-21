@@ -1,32 +1,30 @@
 ﻿using System.Collections;
 using System.Linq;
-using AIChara;
 using BepInEx;
 using HarmonyLib;
 
 using KKAPI.Maker;
 
 using Studio;
-using TMPro;
 
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace HS2_StudioAccessoryNames
+namespace KKS_StudioAccessoryNames
 {
-    [BepInPlugin(nameof(HS2_StudioAccessoryNames), nameof(HS2_StudioAccessoryNames), VERSION)]
-    [BepInProcess("StudioNEOV2")]
-    public class HS2_StudioAccessoryNames : BaseUnityPlugin
+    [BepInPlugin(nameof(KKS_StudioAccessoryNames), nameof(KKS_StudioAccessoryNames), VERSION)]
+    [BepInProcess("CharaStudio")]
+    public class KKS_StudioAccessoryNames : BaseUnityPlugin
     {
         public const string VERSION = "1.0.0";
         
-        public static HS2_StudioAccessoryNames instance;
+        public static KKS_StudioAccessoryNames instance;
 
         private void Awake()
         {
             instance = this;
 
-            var harmony = new Harmony("HS2_StudioAccessoryNames");
+            var harmony = new Harmony("KKS_StudioAccessoryNames");
             harmony.PatchAll(typeof(Hooks));
         }
 
@@ -49,15 +47,15 @@ namespace HS2_StudioAccessoryNames
                     switch (oldPos.x)
                     {
                         case 100:
-                            btn.transform.localPosition = new Vector3(155, oldPos.y, oldPos.z);
+                            btn.transform.localPosition = new Vector3(160, oldPos.y, oldPos.z);
                             break;
                         case 130:
-                            btn.transform.localPosition = new Vector3(185, oldPos.y, oldPos.z);
+                            btn.transform.localPosition = new Vector3(190, oldPos.y, oldPos.z);
                             break;
                     }
                 }
                 
-                var text = child.GetComponentInChildren<TextMeshProUGUI>();
+                var text = child.GetComponentInChildren<Text>();
                 if (text == null)
                     continue;
 
@@ -76,7 +74,7 @@ namespace HS2_StudioAccessoryNames
                     var accObj = _char.charInfo.GetAccessoryObject(index);
                     if (accObj != null)
                     {
-                        var acc = accObj.GetComponent<CmpAccessory>();
+                        var acc = accObj.GetComponent<ChaAccessoryComponent>();
                         text.text = acc == null ? $"スロット{index + 1:D2}" : $"{index + 1:D2} {acc.GetComponent<ListInfoComponent>().data.Name}";
                     }
                 }

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Linq;
+using AIChara;
 using BepInEx;
 using HarmonyLib;
 
@@ -72,8 +73,12 @@ namespace AI_StudioAccessoryNames
                 }
                 else
                 {
-                    var acc = _char.charInfo.GetAccessory(index);
-                    text.text = acc == null ? $"スロット{index + 1:D2}" : $"{index + 1:D2} {acc.GetComponent<AIChara.ListInfoComponent>().data.Name}";
+                    var accObj = _char.charInfo.GetAccessoryObject(index);
+                    if (accObj != null)
+                    {
+                        var acc = accObj.GetComponent<CmpAccessory>();
+                        text.text = acc == null ? $"スロット{index + 1:D2}" : $"{index + 1:D2} {acc.GetComponent<ListInfoComponent>().data.Name}";
+                    }
                 }
 
                 index++;
