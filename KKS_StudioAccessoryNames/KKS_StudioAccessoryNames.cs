@@ -16,7 +16,7 @@ namespace KKS_StudioAccessoryNames
     [BepInProcess("CharaStudio")]
     public class KKS_StudioAccessoryNames : BaseUnityPlugin
     {
-        public const string VERSION = "1.0.0";
+        public const string VERSION = "1.1.0";
         
         public static KKS_StudioAccessoryNames instance;
 
