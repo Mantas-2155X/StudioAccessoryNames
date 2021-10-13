@@ -79,6 +79,10 @@ namespace AI_StudioAccessoryNames
                         var acc = accObj.GetComponent<CmpAccessory>();
                         text.text = acc == null ? $"スロット{index + 1:D2}" : $"{index + 1:D2} {acc.GetComponent<ListInfoComponent>().data.Name}";
                     }
+                    else
+                    {
+                        text.text = $"スロット{index + 1:D2}";
+                    }
                 }
 
                 index++;
