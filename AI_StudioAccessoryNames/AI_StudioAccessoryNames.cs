@@ -18,7 +18,7 @@ namespace AI_StudioAccessoryNames
     [BepInProcess("StudioNEOV2")]
     public class AI_StudioAccessoryNames : BaseUnityPlugin
     {
-        public const string VERSION = "1.1.0";
+        public const string VERSION = "1.1.1";
         
         public static AI_StudioAccessoryNames instance;
 

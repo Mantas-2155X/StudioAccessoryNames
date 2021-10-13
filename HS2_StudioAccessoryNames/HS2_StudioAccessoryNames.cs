@@ -18,7 +18,7 @@ namespace HS2_StudioAccessoryNames
     [BepInProcess("StudioNEOV2")]
     public class HS2_StudioAccessoryNames : BaseUnityPlugin
     {
-        public const string VERSION = "1.1.0";
+        public const string VERSION = "1.1.1";
         
         public static HS2_StudioAccessoryNames instance;
 

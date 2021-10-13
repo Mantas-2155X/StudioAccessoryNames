@@ -14,7 +14,7 @@ namespace PH_StudioAccessoryNames
     [BepInProcess("PlayHomeStudio32bit")]
     public class PH_StudioAccessoryNames : BaseUnityPlugin
     {
-        public const string VERSION = "1.1.0";
+        public const string VERSION = "1.1.1";
         
         public static PH_StudioAccessoryNames instance;
 
