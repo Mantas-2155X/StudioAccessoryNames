@@ -14,6 +14,7 @@ namespace KKS_StudioAccessoryNames
 {
     [BepInPlugin(nameof(KKS_StudioAccessoryNames), nameof(KKS_StudioAccessoryNames), VERSION)]
     [BepInProcess("CharaStudio")]
+    [BepInDependency(KKAPI.KoikatuAPI.GUID, KKAPI.KoikatuAPI.VersionConst)]
     public class KKS_StudioAccessoryNames : BaseUnityPlugin
     {
         public const string VERSION = "1.1.1";
