@@ -16,6 +16,7 @@ namespace HS2_StudioAccessoryNames
 {
     [BepInPlugin(nameof(HS2_StudioAccessoryNames), nameof(HS2_StudioAccessoryNames), VERSION)]
     [BepInProcess("StudioNEOV2")]
+    [BepInDependency(KKAPI.KoikatuAPI.GUID, KKAPI.KoikatuAPI.VersionConst)]
     public class HS2_StudioAccessoryNames : BaseUnityPlugin
     {
         public const string VERSION = "1.1.1";
